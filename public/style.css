@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(to right, rgb(153, 182, 235), rgb(197, 198, 199));
+}
+h1 {
+    font-family: "monospace";
+    font-size: 54px;
+    text-align: center; 
+    padding: 0;
+    padding-left: 0;
+    margin: auto;
+    margin-top: 70px;   
+    margin-bottom: 50px;  
+    text-shadow: 1px 1px #525252;
+    width: 450px;
+}
+h1:hover {
+    cursor: pointer;
+    font-weight: normal;
+}
+h2 {
+    font-size: 34px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 240px;
+} 
+h2:hover {
+  cursor: pointer;
+  font-weight: normal;
+}
+.textParagraph {
+    font-family: "Luminari";
+    font-size: 21px;
+    color: black;
+    margin-bottom: 80px;
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 150%;
+    opacity: 1;
+}
+#middleBox {
+    margin-top: 70px;
+    margin-bottom: 110px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 40px;
+    padding-bottom: 1px;
+    background-color: rgb(231, 230, 230);
+    border-radius: 3rem;
+    opacity: 0.7;
+}
+.custom-color {
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 8px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(150, 150, 150);
+  color: black;
+}
+#layout-options {
+  background-color: rgb(201, 201, 201);
+  font-size: 20px;
+  display: flex;
+}
+ul li {
+  width: 170px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 0 0 0.1px 0.1px;
+  font-size: 16px;
+}
+ul li ul {
+  margin-top: 30px;
+}
+ul li ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(119, 119, 119);
+}
+ul li:hover ul .visible{
+  display: flex;
+}
+#savingMenu {
+  text-align: center;
+  width: 170px;
+  border-style: solid;
+  border-radius: 0; 
+  border-width: 0 0 0.1px 0.1px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.savingLayoutInput {
+  width: 50%;
+}
+::placeholder {
+  text-align: center;
+}
+.deleteTag {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.deleteMe {
+  display: none;
+}
+.deletable:hover +.deleteMe, .deleteMe:hover  {
+  display: flex;
+  width: 50px;
+  margin-left: -50px;
+  background-color: rgb(230, 71, 103);
+  border-style: solid;
+  border-top-width: 1px;
+  margin-top: -1px;
+}
+
+@media (max-width: 1000px){
+  #middleBox {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .textParagraph {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 150%;
+  }
+}
